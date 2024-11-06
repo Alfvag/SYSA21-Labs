@@ -18,4 +18,5 @@ public class Passenger {
     public int getAge() {
         return this.age;
     }
+    
 }

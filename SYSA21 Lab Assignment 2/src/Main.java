@@ -95,11 +95,11 @@ public class Main {
                 case 6:
                     System.out.println("#### PASSENGER MANIFEST ####");
                     System.out.println("SkyBox Ltd.");
-                    System.out.println("Seat  Name  Age");
+                    System.out.printf("%-5s %-10s %-10s\n", "Seat", "Name", "Age");
 
                     for (int i = 0; i < maxSeats; i++) {
                         if (passengers[i] != null) {
-                            System.out.println(String.valueOf(i + 1) + "     " + Objects.toString(passengers[i].getName()) + "  " + Objects.toString(passengers[i].getAge()));
+                            System.out.printf("%-5s %-10s %-10s\n", (i + 1), Objects.toString(passengers[i].getName()), Objects.toString(passengers[i].getAge()));
                         } else {
                             System.out.println(String.valueOf(i + 1));
                         }
@@ -119,6 +119,5 @@ public class Main {
         }
 
         scanner.close();
-
     }
 }
