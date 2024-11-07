@@ -1,7 +1,12 @@
+import java.util.ArrayList;
+
 public class Person {
     private String identificationNumber;
     private String name;
     private int age;
+    private ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
+
+    //TODO Hur koppla samman person och bankkonto? Se UML-diagrammet i instruktionen.
 
     public Person(String identificationNumber, String name, int age) {
         this.identificationNumber = identificationNumber;
